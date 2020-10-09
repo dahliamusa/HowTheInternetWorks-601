@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>How The Internet Works</title>
+    <title>DNS</title>
 </head>
 <body>
 
@@ -21,20 +21,20 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Components of the Internet
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="domain.html">Domain Names and ICANN</a>
                             <a class="dropdown-item" href="ipaddress.html">IP Addresses, Packets and Routing</a>
-                            <a class="dropdown-item" href="dns.html">DNS</a>
+                            <a class="dropdown-item active" href="dns.html">DNS</a>
                             <a class="dropdown-item" href="http.html">HTTP and HTTPS Protocols</a>
                             <a class="dropdown-item" href="w3c.html">W3C and HTML and CSS</a>
                         </div>
@@ -46,17 +46,24 @@
     </nav>
 </header>
 
-<div class="jumbotron" style="background-image: url(https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80); background-size: 100% 100%; height: 50rem">
-    <div class="text-center text-light">
-        <h1 class="display-4 font-weight-bold">How does the Internet work?</h1>
-        <p class="lead">Start reading about the components of the Internet and how they work</p>
-        <a class="btn btn-outline-light btn-lg" href="#" role="button">Learn more</a>
-    </div>
+<div class="container">
+    <h1 class="mt-5">DNS</h1>
 </div>
 
-<!--div class="container">
-    <h1 class="mt-5">How the Internet Works</h1>
-</div-->
+<main class="container mt-4">
+    <div class="row">
+        <div class="col-8">
+            <p>
+                Domain Name Server (DNS) contains a large database that is used to associate domain names with IP addresses. When you look up a website, your computer uses DNS to find the IP address associated with the domain name you entered, and then uses the address to connect your computer with the website. DNS servers are networked in a distributed hierarchy and are divided into zones, as one DNS server cannot handle all the requests sent from the billions of existing devices. Using zones, DNS servers split up responsibility for major top-level domains (TLDs) like .com, .org and .net.
+            </p>
+            <p>
+                DNS was created to be an open and public communication protocol, and because of its openness, DNS is susceptible to cyber attacks. For example, hackers may enter the DNS server and make changes so that a domain name matches the wrong IP address. Hackers can send users to an imposter website, leading them to believe they are on one website when they are actually on another. HTTPS protocols work to keep the Internet secure to prevent such attacks from happening.
+            </p>
+        </div>
+    </div>
+</main>
+
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

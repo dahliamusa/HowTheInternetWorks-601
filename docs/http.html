@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>HTTP and HTTPS Protocols</title>
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar navbar-light">
+        <div class="container">
+            <a class="navbar-brand">How the Internet Works</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Components of the Internet
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="domain.html">Domain Names and ICANN</a>
+                            <a class="dropdown-item" href="ipaddress.html">IP Addresses, Packets and Routing</a>
+                            <a class="dropdown-item" href="dns.html">DNS</a>
+                            <a class="dropdown-item active" href="http.html">HTTP and HTTPS Protocols</a>
+                            <a class="dropdown-item" href="w3c.html">W3C and HTML and CSS</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <h1 class="mt-5">HTTP and HTTPS Protocols</h1>
+</div>
+
+<main class="container mt-4">
+    <div class="row">
+        <div class="col-8">
+            <p>
+                Hypertext Transfer Protocol (HTTP) is a request-response protocol that is used when you go to a website in your browser. After you enter the website’s URL in your address bar and click enter, your computer connects with a Domain Name Server (DNS) to get the IP address of the associated web server. Your computer then begins communicating with the web server, which is usually thousands of miles away. Your computer will send a GET request to tell the server to retrieve the desired website. Using the data from the web server, your computer is able to  access the website for you from the browser.
+            </p>
+            <p>
+                If you are logging into a website, your computer will send a POST request to the web server. The POST request will tell the web server to verify your information, log you in and send your computer the webpage. With the webpage, the server also sends your computer some cookie data which the browser sees and saves. The cookie is an ID number that identifies you in that website. The next time you log in, your browser will know to send the cookie data to the web server so the web server knows where the request is coming from.
+            </p>
+            <p>
+                The Internet is open, connections are shared and information is sent in plain text, and because of this, hackers may try to access private information over the Internet. Safe websites prevent this from happening by asking your web browser to communicate on a secure channel using secure sockets layer (SSL) and its successor, transport layer security (TLS). SSL and TLS act as a layer of security wrapped around communications to protect them from snooping or tampering. SSL or TLS are active when a lock appears in the address bar next to “https.” HTTPS ensures that the website you are accessing is safe and that your information is protected.
+            </p>
+            <p>
+                When a website asks your browser to engage in secure connection, it first provides a digital certificate that proves that it is the website it claims to be. Certificates are published by certificate authorities, who verify identities of websites and issue certificates for them. If a website tries to start a connection without a certificate, the browser will warn you.
+
+            </p>
+        </div>
+    </div>
+</main>
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

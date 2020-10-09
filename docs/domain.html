@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>How The Internet Works</title>
+    <title>Domain Names and ICANN</title>
 </head>
 <body>
 
@@ -21,18 +21,18 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Components of the Internet
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="domain.html">Domain Names and ICANN</a>
+                            <a class="dropdown-item active" href="domain.html">Domain Names and ICANN</a>
                             <a class="dropdown-item" href="ipaddress.html">IP Addresses, Packets and Routing</a>
                             <a class="dropdown-item" href="dns.html">DNS</a>
                             <a class="dropdown-item" href="http.html">HTTP and HTTPS Protocols</a>
@@ -46,17 +46,25 @@
     </nav>
 </header>
 
-<div class="jumbotron" style="background-image: url(https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80); background-size: 100% 100%; height: 50rem">
-    <div class="text-center text-light">
-        <h1 class="display-4 font-weight-bold">How does the Internet work?</h1>
-        <p class="lead">Start reading about the components of the Internet and how they work</p>
-        <a class="btn btn-outline-light btn-lg" href="#" role="button">Learn more</a>
-    </div>
+<div class="container">
+    <h1 class="mt-5">Domain Names and ICANN</h1>
 </div>
 
-<!--div class="container">
-    <h1 class="mt-5">How the Internet Works</h1>
-</div-->
+<main class="container mt-4">
+    <div class="row">
+        <div class="col-8">
+            <p>
+                A domain name is a unique set of characters that identifies a specific website. Each domain name contains a top-level domain (TLD), like .com, .org and .net, and a subdomain of that top-level domain. For example, in the domain name njit.edu, .edu is the TLD and njit is the subdomain. Each domain name is associated with an IP address, which is a unique numerical label that identifies the location of the website.
+            </p>
+            <p>
+                Domain names and IP addresses are managed by an organization called the Internet Corporation for Assigned Names and Numbers (ICANN). ICANN manages the central repository for all IP addresses; they maintain and administer IP addresses for devices across the world. It is important to note that although ICANN oversees the use of Internet domains, it does not regulate the content and activities of the Internet.
+
+            </p>
+        </div>
+    </div>
+</main>
+
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
